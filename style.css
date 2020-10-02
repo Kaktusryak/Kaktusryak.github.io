@@ -74,7 +74,7 @@
 
     padding: 10px;
 }
-x {float: left;
+x { 
     background-color:rgb(230, 228, 154);
     width: 26%;
     height: 10%;
@@ -83,7 +83,7 @@ x {float: left;
     
     
 }
-y {float: right;
+y { 
     background-color: rgb(230, 228, 154);
     width: 20%;
     height: 10%;
