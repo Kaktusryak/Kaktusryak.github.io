@@ -113,14 +113,7 @@ As the Separatist Droid Army attempts to flee the besieged capital with their va
                     document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
                 }
             }
-            if(document.cookie!=null){
-                alert(document.cookie);
-                alert("Cookies will be deleted permanently");
-                deleteAllCookies();
-                document.getElementById('FF').remove();
-            }
-            else{
-                function Save(){
+            function Save(){
                     var Data = document.Form.Line.value;
                 
                     a = new Array(10);
@@ -137,7 +130,18 @@ As the Separatist Droid Army attempts to flee the besieged capital with their va
                     document.cookie="number=t";
                 
                     }
-            }   
+            if(document.cookie!=null){
+                alert(document.cookie);
+                alert("Cookies will be deleted permanently");
+                deleteAllCookies();
+                document.getElementById('FF').remove();
+            }
+            else{
+                
+                    document.cookie="number=t";
+                
+            }
+              
             
 
            
