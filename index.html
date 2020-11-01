@@ -127,20 +127,16 @@ As the Separatist Droid Army attempts to flee the besieged capital with their va
                         }
                     }
                     alert(t);
-                    document.cookie="number=t";
+                    document.cookie="Number= "+ t;
                 
                     }
-            if(document.cookie!=null){
+            if(document.cookie.includes('Number=')){
                 alert(document.cookie);
                 alert("Cookies will be deleted permanently");
                 deleteAllCookies();
                 document.getElementById('FF').remove();
             }
-            else{
-                
-                    document.cookie="number=t";
-                
-            }
+            
               
             
 
