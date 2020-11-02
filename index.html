@@ -51,16 +51,16 @@ As the Separatist Droid Army attempts to flee the besieged capital with their va
 
             <sixth>
                 Hello there!
-                <input type="radio"  name="raz" value="1"/>&lt Normal
-                <input type="radio" name="raz" value="2"/>&lt Italic
+                <input type="radio"  name="rad" value="1"/>&lt Normal
+                <input type="radio" name="rad" value="2"/>&lt Italic
 
                 <script>
                     //task4
                     var el = document.getElementById("Forth");
-                    var raz = document.getElementsByName('raz');
-                    for (var i = 0; i < raz.length; i++) {
-                        raz[i].onclick = function() {
-                        localStorage.setItem('IRadioRaz', this.value);
+                    var rad = document.getElementsByName('rad');
+                    for (var i = 0; i < rad.length; i++) {
+                        rad[i].onclick = function() {
+                        localStorage.setItem('IRadio', this.value);
                         if(this.value == 1){
                             el.style.fontStyle = "normal";
                         }
@@ -70,12 +70,12 @@ As the Separatist Droid Army attempts to flee the besieged capital with their va
                         }
                     }
                     
-                    if(localStorage.getItem('IRadioRaz')) {
-                        var IRadioRaz = localStorage.getItem('IRadioRaz');
-                        document.querySelector('input[name="raz"][value="' + IRadioRaz + '"]').setAttribute('checked','checked');
+                    if(localStorage.getItem('IRadio')) {
+                        var IRadio = localStorage.getItem('IRadio');
+                        document.querySelector('input[name="rad"][value="' + IRadio + '"]').setAttribute('checked','checked');
                     }
-                    if(localStorage.getItem('IRadioRaz') == null) {localStorage.setItem('IRadioRaz',1);}
-                        else if(localStorage.getItem('IRadioRaz') == 1) {document.querySelector('#Forth').style.fontStyle = 'normal';}
+                    if(localStorage.getItem('IRadio') == null) {localStorage.setItem('IRadio',1);}
+                        else if(localStorage.getItem('IRadio') == 1) {document.querySelector('#Forth').style.fontStyle = 'normal';}
                             else {document.querySelector('#Forth').style.fontStyle = 'italic';}
   
 
