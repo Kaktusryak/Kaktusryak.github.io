@@ -6,8 +6,12 @@ function task2(){
         var keyName = event.key;
 
         if (event.code == 'KeyZ'){
-            document.querySelector("#First").style.fontStyle='italic';
-            document.querySelector("#Sixth").style.fontStyle='italic';
+            setTimeout(function(){
+                document.querySelector("#First").style.fontStyle='italic';
+                document.querySelector("#Sixth").style.fontStyle='italic';
+
+            },3000);
+            
         }
         setInterval(function(){if(document.querySelector("#Fifth").style.fontStyle=='italic' ){
             
