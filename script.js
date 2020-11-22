@@ -157,8 +157,8 @@ function compare(a,b){
 
 //////////////////
 //task1();
-//task2();
-//task3();
+task2();
+task3();
 task4(call_1, call_2,call_3);
 
 
