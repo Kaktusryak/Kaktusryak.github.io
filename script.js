@@ -1,7 +1,4 @@
 function task2(){
-    setTimeout(function(){
-        alert("Press Z to start task2()")
-    },10000)
     document.addEventListener('keypress', (event) => {
         var keyName = event.key;
 
@@ -117,9 +114,9 @@ function task4(call_1, call_2, call_3){
 function insertionSort(inputArr) {
     let n = inputArr.length;
         for (let i = 1; i < n; i++) {
-            // Choosing the first element in our unsorted subarray
+            
             let current = inputArr[i];
-            // The last element of our sorted subarray
+            
             let j = i-1; 
             while ((j > -1) && (current < inputArr[j])) {
                 inputArr[j+1] = inputArr[j];
@@ -147,16 +144,8 @@ function Save(){
     insertionSort(a);
 
     alert(a);
-    
-    
-    
+}
 
-}
-function compare(a,b){
-    if(a < b) return -1;
-    if(a > b) return 1;
-    if(a == b) return 0;
-}
 
 
 //////////////////
@@ -166,3 +155,5 @@ task3();
 task4(call_1, call_2,call_3);
 
 
+//Kaktusryak
+//kaktusryak.github.io
